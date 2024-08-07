@@ -54,10 +54,10 @@ export default function Home() {
                     </div>
                   </SplideSlide>
                 </Splide>
-                <h1 className="text-white font-monument pt-8 text-xl leading-loose">
+                <h1 className="text-white font-monument pt-8 text-2xl leading-loose">
                   we are <br />{" "}
                 </h1>
-                <div className="font-sofachrome text-htfgreen pt-2 text-xl leading-loose">
+                <div className="font-sofachrome text-htfgreen pt-2 text-2xl leading-loose">
                   <ReactTyped
                     strings={[
                       "DEVELOPERS",
@@ -74,12 +74,14 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div></div>
+          <div className="basis-5/12 bg-black">
+              
+          </div>
         </div>
       </div>
-      <div className="h-screen bg-black">
+      <div className="h-screen w-screen bg-black">
         <div id="sphere" className="z-0 absolute"></div>
-        <div className="h-full w-full flex z-10 absolute">
+        <div className="h-full w-full flex z-10 relative">
           <div className="h-full w-full font-monument text-white text-6xl flex-col items-center px-8 py-20">
             <div className="flex items-center justify-center">
               <img src="/leftarrow.png"></img>
@@ -87,7 +89,7 @@ export default function Home() {
               <img src="/rightarrow.png"></img>
             </div>
 
-            <div className="pt-20 pb-12 text-xl text-center z-10 px-36 font-horizon">
+            <div className="pt-16 pb-12 text-xl text-center z-10 px-36 font-horizon">
               <h1>
                 Hack the Future is a student run organization at Purdue aimed
                 towards creating software for local nonprofits free of cost. We
@@ -96,39 +98,124 @@ export default function Home() {
               </h1>
             </div>
             <div className="w-full h-3/5 flex-col">
-                <div className=" h-1/4 w-full flex px-20">
-                    <div className="itemhead mx-4 h-full basis-1/3 flex items-center justify-center">
-                      <h1 className="text-3xl font-sofachrome text-htfgreen pr-2 pb-2">COMMUNITY</h1>
-                    </div>
-                    <div className="itemhead mx-4 h-full basis-1/3 flex items-center justify-center">
-                      <h1 className="text-3xl font-sofachrome text-htfgreen pr-2 pb-2">ENGAGEMENT</h1>
-                    </div>
-                    <div className="itemhead mx-4 h-full basis-1/3 flex items-center justify-center">
-                      <h1 className="text-3xl font-sofachrome text-htfgreen pr-2 pb-2">IMPACT</h1>
-                    </div>
+              <div className=" h-1/4 w-full flex px-20">
+                <div className="itemhead mx-4 h-full basis-1/3 flex items-center justify-center">
+                  <h1 className="text-3xl font-sofachrome text-htfgreen pr-2 pb-2">
+                    EXPERIENCE
+                  </h1>
                 </div>
-                <div className=" h-3/4 w-full flex px-20 pt-8">
-                    <div className="itemhead mx-4 h-full basis-1/3 flex items-center justify-center px-4 text-center">
-                      <h1 className="text-xl font-horizon text-white pr-2 pb-2">
-                      We’ve worked with over 10 nonprofits in the Greater Lafayette area so far. This year, we plan to expand our reach and work with non profits all over the country and potentially the world!
-                      </h1>
-                    </div>
-                    <div className="itemhead mx-4 h-full basis-1/3 flex items-center justify-center px-4 text-center">
-                      <h1 className="text-xl font-horizon text-white pr-2 pb-2">
-                      We are the largest software development club on the Purdue campus with over 200 applicants each year and multiple teams of  50+ students
-                      </h1>
-                    </div>
-                    <div className="itemhead mx-4 h-full basis-1/3 flex items-center justify-center px-4 text-center">
-                      <h1 className="text-xl font-horizon text-white pr-2 pb-2">
-                      We’ve built many projects throughout the years that aid nonprofits in multiple ways and automate their processes,  saving them countless hours of work
-                     </h1>
-                    </div>
+                <div className="itemhead mx-4 h-full basis-1/3 flex items-center justify-center">
+                  <h1 className="text-3xl font-sofachrome text-htfgreen pr-2 pb-2">
+                    ENGAGEMENT
+                  </h1>
                 </div>
+                <div className="itemhead mx-4 h-full basis-1/3 flex items-center justify-center">
+                  <h1 className="text-3xl font-sofachrome text-htfgreen pr-2 pb-2">
+                    IMPACT
+                  </h1>
+                </div>
+              </div>
+              <div className=" h-3/4 w-full flex px-20 pt-8">
+                <div className="itemhead mx-4 h-full basis-1/3 flex items-center justify-center px-4 text-center">
+                  <h1 className="text-xl font-horizon text-white pr-2 pb-2">
+                    We work on projects alongside non-profits across the US,
+                    giving students hands-on, real-world work and valuable
+                    industry experience.
+                  </h1>
+                </div>
+                <div className="itemhead mx-4 h-full basis-1/3 flex items-center justify-center px-4 text-center">
+                  <h1 className="text-xl font-horizon text-white pr-2 pb-2">
+                    Hack the Future is the largest project-oriented software
+                    development club at Purdue with over 250 applicants each
+                    year.
+                  </h1>
+                </div>
+                <div className="itemhead mx-4 h-full basis-1/3 flex items-center justify-center px-4 text-center">
+                  <h1 className="text-xl font-horizon text-white pr-2 pb-2">
+                    We’ve built many projects throughout the years that aid
+                    nonprofits in multiple ways and automate their processes,
+                    saving them countless hours of work
+                  </h1>
+                </div>
+              </div>
             </div>
-            
           </div>
-            
+        </div>
+      </div>
+      <div className="h-screen w-screen bg-black">
+        <div id="sphere" className="z-0 absolute"></div>
+        <div className="h-full w-full flex z-10 relative">
+          <div className="h-full w-full font-monument text-white text-6xl flex-col items-center px-8 py-20">
+            <div className="flex items-center justify-center">
+              <img src="/leftarrow.png"></img>
+              <h1 className="pt-4 mx-2">GET INVOLVED</h1>
+              <img src="/rightarrow.png"></img>
+            </div>
+
+            <div className="w-full pt-20 h-3/5 flex-col">
+              <div className=" h-1/4 w-full flex px-20">
+                <div className="itemhead mx-4 h-full basis-1/2 flex items-center justify-center">
+                  <h1 className="text-3xl font-sofachrome text-htfgreen pr-2 pb-2">
+                    STUDENTS
+                  </h1>
+                </div>
+                <div className="itemhead mx-4 h-full basis-1/2 flex items-center justify-center">
+                  <h1 className="text-3xl font-sofachrome text-htfgreen pr-2 pb-2">
+                    NON-PROFITS
+                  </h1>
+                </div>
+              </div>
+              <div className=" h-3/4 w-full flex px-20 pt-8">
+                <div className="itemhead mx-4 h-full basis-1/2 flex items-center justify-center px-4 text-center">
+                  <h1 className="text-xl font-horizon text-white pr-2 pb-2">
+                    We are accepting applications for the 2024-25 school year.
+                    Students can apply to be a software developer, UX designer,
+                    or team lead. Students can be enrolled in any major but have
+                    a keen interest in at least one of the described roles
+                    above.
+                  </h1>
+                </div>
+                <div className="itemhead mx-4 h-full basis-1/2 flex items-center justify-center px-4 text-center">
+                  <h1 className="text-xl font-horizon text-white pr-2 pb-2">
+                    We are now accepting project proposals for the 2024-25
+                    school year. We offer a wide range of services such as
+                    website redesign and development, software enhancement, etc.
+                    A detailed project brief is required for applications.
+                  </h1>
+                </div>
+              </div>
+              <div className="w-full flex gap-10 font-monument text-base">
+                <div className="flex-col px-8 pt-16">
+                  <h1 className="pb-4 text-htfgreen">GENERAL</h1>
+                  <h1>HOME</h1>
+                  <h1>ABOUT</h1>
+                  <h1>PORTFOLIO</h1>
+                  <h1>MEET US</h1>
+                  <h1>EVENTS</h1>
+                  <h1>FAQ</h1>
+                </div>
+
+                <div className="flex-col px-8 w-1/3 pt-16">
+                  <h1 className="pb-4 text-htfgreen">GET INVOLVED</h1>
+                  <h1>STUDENTS</h1>
+                  <h1>NON-PROFITS</h1>
+                </div>
+                <div className="flex-col px-8 pt-16">
+                  <h1 className="pb-4 text-htfgreen">CONTACT US</h1>
+                  <h1>htfpurdue@gmail.com</h1>
+                </div>
+                <div className="flex-col  pt-16 w-1/2">
+
+                </div>
+                <div className="flex-col justify-right px-8 pt-16">
+                <img src="/Logo.png" className="h-12 w-42 pl-12 mb-8 ml-6 object-right"></img>
+                  <h1 className="text-right">Purdue University, West Lafayette, IN, 47906</h1>
+                </div>
+              </div>
+            </div>
           </div>
+          <img className="z-0 absolute bottom-0" src="/globe.png"></img>
+        </div>
       </div>
     </>
   );
