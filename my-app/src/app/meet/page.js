@@ -55,16 +55,55 @@ export default function Home() {
             <h1 className="font-monument px-4 text-white">FAQ</h1>
           </button>
         </div>
-        <div className="h-full w-full bg-black flex z-10 relative">
-          <div className="h-full w-full font-monument text-white text-5xl flex-col items-center pb-20">
-            <div className="flex items-center justify-center">
+        <div className="h-full w-full bg-black flex-col z-10 relative">
+          <div className="h-1/12 w-full font-monument text-white text-5xl flex-col items-center">
+            <div className="flex items-center justify-center h-full ">
               <img src="/leftarrow.png"></img>
               <h1 className="pt-2 mx-8">MEET THE EXEC BOARD!</h1>
               <img src="/rightarrow.png"></img>
             </div>
+          </div>
+          <div className="w-full flex h-1/3 px-72 gap-48 mb-8">
+            <img className="scale-125" src="/mahika.png"></img>
+            <img className="scale-125" src="/tanay.png"></img>
+            <img className="scale-125" src="/lalitha.png"></img>
+          </div>
+          <div className="w-full flex h-1/3 px-72 gap-44">
+            <img className="scale-125" src="/sanjana.png"></img>
+            <img className="scale-125" src="/vipula.png"></img>
+            <img className="scale-125" src="/ryan.png"></img>
+          </div>
+          <div className="w-full flex gap-10 font-monument text-base bg-black text-white pt-16">
+                <div className="flex-col px-8 pt-16">
+                  <h1 className="pb-4 text-htfgreen">GENERAL</h1>
+                  <h1>HOME</h1>
+                  <h1>ABOUT</h1>
+                  <h1>PORTFOLIO</h1>
+                  <h1>MEET US</h1>
+                  <h1>EVENTS</h1>
+                  <h1>FAQ</h1>
+                </div>
 
+                <div className="flex-col px-8 w-1/3 pt-16">
+                  <h1 className="pb-4 text-htfgreen">GET INVOLVED</h1>
+                  <h1>STUDENTS</h1>
+                  <h1>NON-PROFITS</h1>
+                </div>
+                <div className="flex-col px-8 pt-16">
+                  <h1 className="pb-4 text-htfgreen">CONTACT US</h1>
+                  <h1>htfpurdue@gmail.com</h1>
+                </div>
+                <div className="flex-col  pt-16 w-1/2">
+
+                </div>
+                <div className="flex-col justify-right px-8 pt-16">
+                <img src="/Logo.png" className="h-12 w-42 pl-12 mb-8 ml-6 object-right"></img>
+                  <h1 className="text-right">Purdue University, West Lafayette, IN, 47906</h1>
+                </div>
+              </div>
+          <img className="z-0 absolute -bottom-32 mt-20" src="/globe.png"></img>
         </div>
-      </div>
+        
       </div>
     </>
   );

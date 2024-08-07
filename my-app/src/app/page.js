@@ -8,6 +8,10 @@ import "@splidejs/splide/dist/css/splide.min.css";
 import { ReactTyped } from "react-typed";
 
 export default function Home() {
+  const scrollAbout = () => {
+    document.getElementById("about")?.scrollIntoView({behavior: 'smooth'});
+  }
+
   const isHovered = (event) => {
     (event.target).classList.add("gradient");
     document.getElementById("home")?.classList.remove("gradient");
@@ -27,11 +31,9 @@ export default function Home() {
           <button id="home" className="gradient">
           <h1  className="font-monument px-4 text-white">HOME</h1>
           </button>
-          <Link href="/about">
-          <button onMouseEnter={isHovered} onMouseLeave={unHovered}>
+          <button onMouseEnter={isHovered} onClick={scrollAbout} onMouseLeave={unHovered}>
           <h1 className="font-monument px-4 text-white">ABOUT</h1>
           </button>
-          </Link>
           <Link href="/involvement">
           <button onMouseEnter={isHovered} onMouseLeave={unHovered}>
           <h1 className="font-monument px-4 text-white">APPLY</h1>
@@ -40,9 +42,11 @@ export default function Home() {
           <button onMouseEnter={isHovered} onMouseLeave={unHovered}>
           <h1 className="font-monument px-4 text-white">PORTFOLIO</h1>
           </button>
+          <Link href="/meet">
           <button onMouseEnter={isHovered} onMouseLeave={unHovered}>
           <h1 className="font-monument px-4 text-white">MEET US</h1>
           </button>
+          </Link>
           <button onMouseEnter={isHovered} onMouseLeave={unHovered}>
           <h1 className="font-monument px-4 text-white">EVENTS</h1>
           </button>
@@ -110,11 +114,11 @@ export default function Home() {
       </div>
       <div className="h-screen w-screen bg-black">
         <div id="sphere" className="z-0 absolute"></div>
-        <div className="h-full w-full flex z-10 relative">
-          <div className="h-full w-full font-monument text-white text-6xl flex-col items-center px-8 py-20">
-            <div className="flex items-center justify-center">
+        <div  id='about'  className="h-full w-full flex z-10 relative">
+          <div  className="h-full w-full font-monument text-white text-6xl flex-col items-center px-8 py-20">
+            <div  className="flex items-center justify-center">
               <img src="/leftarrow.png"></img>
-              <h1 className="pt-4 mx-2"> WHAT WE DO</h1>
+              <h1  className="pt-4 mx-2"> WHAT WE DO</h1>
               <img src="/rightarrow.png"></img>
             </div>
 
@@ -126,7 +130,7 @@ export default function Home() {
                 different nonprofits with the hopes of bettering the community.
               </h1>
             </div>
-            <div className="w-full h-3/5 flex-col">
+            <div   className="w-full h-3/5 flex-col">
               <div className=" h-1/4 w-full flex px-20">
                 <div className="itemhead mx-4 h-full basis-1/3 flex items-center justify-center">
                   <h1 className="text-3xl font-sofachrome text-htfgreen pr-2 pb-2">
