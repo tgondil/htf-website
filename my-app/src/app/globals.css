@@ -12,6 +12,11 @@
     src: url("/sofachrome.otf");
 }
 
+@font-face {
+    font-family: "Horizon";
+    src: url("/horizon.otf");
+}
+
 @layer utilities {
     .text-balance {
         text-wrap: balance;
@@ -42,11 +47,20 @@
 }
 
 #sphere {
-    width: 544.791px;
-    height: 538.318px;
+    width: 584.791px;
+    height: 578.318px;
     transform: rotate(34.936deg);
     flex-shrink: 0;
     border-radius: 644.791px;
     background: linear-gradient(203deg, #000 6.07%, #000 10.62%, #015624 44.19%, #03C652 84.88%);
-    margin-left: -350px;
+    margin-left: -300px;
+    z-index: 0;
+}
+
+.itemhead {
+    border-radius: 50px;
+    border: 1px solid #DAF7E6;
+    background: linear-gradient(142deg, rgba(190, 252, 215, 0.20) 9.69%, rgba(82, 252, 151, 0.10) 78.11%);
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.20);
+    backdrop-filter: blur(20px);
 }

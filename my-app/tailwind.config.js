@@ -10,6 +10,7 @@ module.exports = {
     fontFamily: {
       monument: ["Monument", "sans-serif"],
       sofachrome: ["Sofachrome", "sans-serif"],
+      horizon: ["Horizon", "sans-serif"],
     },
     extend: {
       backgroundImage: {

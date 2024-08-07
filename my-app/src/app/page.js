@@ -25,7 +25,8 @@ export default function Home() {
           <div className="basis-7/12 flex-col bg-black">
             <div className="flex-col justify-center items-center pt-20  pl-20 h-full w-full">
               <h1 className="text-white font-monument text-5xl leading-normal">
-                TRANSFORMING NONPROFITS <br /> <span className="gradient">WITH TECHNOLOGY</span>
+                TRANSFORMING NONPROFITS <br />{" "}
+                <span className="gradient">WITH TECHNOLOGY</span>
               </h1>
               <div className="pt-12 w-4/5">
                 <Splide
@@ -57,20 +58,19 @@ export default function Home() {
                   we are <br />{" "}
                 </h1>
                 <div className="font-sofachrome text-htfgreen pt-2 text-xl leading-loose">
-                <ReactTyped
-                  strings={[
-                    "DEVELOPERS",
-                    "DESIGNERS",
-                    "INNOVATORS",
-                    "HACK THE FUTURE"
-                  ]}
-                  typeSpeed={100}
-                  backSpeed={70}
-                  showCursor={false}
-                  //onComplete={hide}
-                />
+                  <ReactTyped
+                    strings={[
+                      "DEVELOPERS",
+                      "DESIGNERS",
+                      "INNOVATORS",
+                      "HACK THE FUTURE",
+                    ]}
+                    typeSpeed={100}
+                    backSpeed={70}
+                    showCursor={false}
+                    //onComplete={hide}
+                  />
                 </div>
-                
               </div>
             </div>
           </div>
@@ -78,18 +78,57 @@ export default function Home() {
         </div>
       </div>
       <div className="h-screen bg-black">
-        <div className="h-full w-full flex">
-        <div id="sphere" className="z-0">
+        <div id="sphere" className="z-0 absolute"></div>
+        <div className="h-full w-full flex z-10 absolute">
+          <div className="h-full w-full font-monument text-white text-6xl flex-col items-center px-8 py-20">
+            <div className="flex items-center justify-center">
+              <img src="/leftarrow.png"></img>
+              <h1 className="pt-4 mx-2"> WHAT WE DO</h1>
+              <img src="/rightarrow.png"></img>
+            </div>
 
-        </div>
-        <div className="h-2/6 w-5/6 font-monument text-white text-6xl flex items-center px-8=">
-          <img src="/leftarrow.png"></img>
-          <h1 className="pt-4 mx-8"> WHAT WE DO</h1>
-          <img src="/rightarrow.png"></img>
-        </div>
-        </div>
-        
-
+            <div className="pt-20 pb-12 text-xl text-center z-10 px-36 font-horizon">
+              <h1>
+                Hack the Future is a student run organization at Purdue aimed
+                towards creating software for local nonprofits free of cost. We
+                develop several projects throughout the school year with various
+                different nonprofits with the hopes of bettering the community.
+              </h1>
+            </div>
+            <div className="w-full h-3/5 flex-col">
+                <div className=" h-1/4 w-full flex px-20">
+                    <div className="itemhead mx-4 h-full basis-1/3 flex items-center justify-center">
+                      <h1 className="text-3xl font-sofachrome text-htfgreen pr-2 pb-2">COMMUNITY</h1>
+                    </div>
+                    <div className="itemhead mx-4 h-full basis-1/3 flex items-center justify-center">
+                      <h1 className="text-3xl font-sofachrome text-htfgreen pr-2 pb-2">ENGAGEMENT</h1>
+                    </div>
+                    <div className="itemhead mx-4 h-full basis-1/3 flex items-center justify-center">
+                      <h1 className="text-3xl font-sofachrome text-htfgreen pr-2 pb-2">IMPACT</h1>
+                    </div>
+                </div>
+                <div className=" h-3/4 w-full flex px-20 pt-8">
+                    <div className="itemhead mx-4 h-full basis-1/3 flex items-center justify-center px-4 text-center">
+                      <h1 className="text-xl font-horizon text-white pr-2 pb-2">
+                      We’ve worked with over 10 nonprofits in the Greater Lafayette area so far. This year, we plan to expand our reach and work with non profits all over the country and potentially the world!
+                      </h1>
+                    </div>
+                    <div className="itemhead mx-4 h-full basis-1/3 flex items-center justify-center px-4 text-center">
+                      <h1 className="text-xl font-horizon text-white pr-2 pb-2">
+                      We are the largest software development club on the Purdue campus with over 200 applicants each year and multiple teams of  50+ students
+                      </h1>
+                    </div>
+                    <div className="itemhead mx-4 h-full basis-1/3 flex items-center justify-center px-4 text-center">
+                      <h1 className="text-xl font-horizon text-white pr-2 pb-2">
+                      We’ve built many projects throughout the years that aid nonprofits in multiple ways and automate their processes,  saving them countless hours of work
+                     </h1>
+                    </div>
+                </div>
+            </div>
+            
+          </div>
+            
+          </div>
       </div>
     </>
   );
