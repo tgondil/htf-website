@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link'
 
 import Image from "next/image";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
@@ -7,19 +8,47 @@ import "@splidejs/splide/dist/css/splide.min.css";
 import { ReactTyped } from "react-typed";
 
 export default function Home() {
+  const isHovered = (event) => {
+    (event.target).classList.add("gradient");
+    document.getElementById("home")?.classList.remove("gradient");
+  };
+
+  const unHovered = (event) => {
+    (event.target).classList.remove("gradient");
+    document.getElementById("home")?.classList.add("gradient");
+  };
+
   return (
     <>
       <div className="h-screen bg-black">
         <div id="navbar" className="h-1/6 flex items-center">
           <img src="/Logo.png" className="h-12 w-42 px-12"></img>
           <div className="basis-1/4"></div>
-          <h1 className="font-monument px-4 text-white">HOME</h1>
+          <button id="home" className="gradient">
+          <h1  className="font-monument px-4 text-white">HOME</h1>
+          </button>
+          <Link href="/about">
+          <button onMouseEnter={isHovered} onMouseLeave={unHovered}>
           <h1 className="font-monument px-4 text-white">ABOUT</h1>
-          <h1 className="font-monument px-4 text-white">GET INVOLVED</h1>
+          </button>
+          </Link>
+          <Link href="/involvement">
+          <button onMouseEnter={isHovered} onMouseLeave={unHovered}>
+          <h1 className="font-monument px-4 text-white">APPLY</h1>
+          </button>
+          </Link>
+          <button onMouseEnter={isHovered} onMouseLeave={unHovered}>
           <h1 className="font-monument px-4 text-white">PORTFOLIO</h1>
+          </button>
+          <button onMouseEnter={isHovered} onMouseLeave={unHovered}>
           <h1 className="font-monument px-4 text-white">MEET US</h1>
+          </button>
+          <button onMouseEnter={isHovered} onMouseLeave={unHovered}>
           <h1 className="font-monument px-4 text-white">EVENTS</h1>
+          </button>
+          <button onMouseEnter={isHovered} onMouseLeave={unHovered}>
           <h1 className="font-monument px-4 text-white">FAQ</h1>
+          </button>
         </div>
         <div className="h-5/6 w-full bg-white bg-black flex">
           <div className="basis-7/12 flex-col bg-black">
@@ -167,13 +196,15 @@ export default function Home() {
               </div>
               <div className=" h-3/4 w-full flex px-20 pt-8">
                 <div className="itemhead mx-4 h-full basis-1/2 flex items-center justify-center px-4 text-center">
-                  <h1 className="text-xl font-horizon text-white pr-2 pb-2">
+                <button><Link href="/involvement"><h1 className="text-xl font-horizon text-white pr-2 pb-2 px-4">
                     We are accepting applications for the 2024-25 school year.
                     Students can apply to be a software developer, UX designer,
-                    or team lead. Students can be enrolled in any major but have
-                    a keen interest in at least one of the described roles
-                    above.
+                    or team lead. Click <span className='gradient'>here</span> to apply!
+                    <br></br>
+                    <br></br>
+                    Applying students can be enrolled in any major.
                   </h1>
+                  </Link> </button>
                 </div>
                 <div className="itemhead mx-4 h-full basis-1/2 flex items-center justify-center px-4 text-center">
                   <h1 className="text-xl font-horizon text-white pr-2 pb-2">
