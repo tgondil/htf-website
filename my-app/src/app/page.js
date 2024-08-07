@@ -77,6 +77,20 @@ export default function Home() {
           <div></div>
         </div>
       </div>
+      <div className="h-screen bg-black">
+        <div className="h-full w-full flex">
+        <div id="sphere" className="z-0">
+
+        </div>
+        <div className="h-2/6 w-5/6 font-monument text-white text-6xl flex items-center px-8=">
+          <img src="/leftarrow.png"></img>
+          <h1 className="pt-4 mx-8"> WHAT WE DO</h1>
+          <img src="/rightarrow.png"></img>
+        </div>
+        </div>
+        
+
+      </div>
     </>
   );
 }
