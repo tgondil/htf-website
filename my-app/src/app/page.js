@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/splide/dist/css/splide.min.css";
+import { ReactTyped } from "react-typed";
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
           <div className="basis-7/12 flex-col bg-black">
             <div className="flex-col justify-center items-center pt-20  pl-20 h-full w-full">
               <h1 className="text-white font-monument text-5xl leading-normal">
-                TRANSFORMING NONPROFITS <br /> WITH TECHNOLOGY
+                TRANSFORMING NONPROFITS <br /> <span className="gradient">WITH TECHNOLOGY</span>
               </h1>
               <div className="pt-12 w-4/5">
                 <Splide
@@ -53,8 +54,23 @@ export default function Home() {
                   </SplideSlide>
                 </Splide>
                 <h1 className="text-white font-monument pt-8 text-xl leading-loose">
-                  we are <br /> WITH TECHNOLOGY
+                  we are <br />{" "}
                 </h1>
+                <div className="font-sofachrome text-htfgreen pt-2 text-xl leading-loose">
+                <ReactTyped
+                  strings={[
+                    "DEVELOPERS",
+                    "DESIGNERS",
+                    "INNOVATORS",
+                    "HACK THE FUTURE"
+                  ]}
+                  typeSpeed={100}
+                  backSpeed={70}
+                  showCursor={false}
+                  //onComplete={hide}
+                />
+                </div>
+                
               </div>
             </div>
           </div>

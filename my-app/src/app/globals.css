@@ -8,6 +8,37 @@
 }
 
 @font-face {
-    font-family: "Monument";
-    src: url("/Monument.otf");
+    font-family: "Sofachrome";
+    src: url("/sofachrome.otf");
 }
+
+@layer utilities {
+    .text-balance {
+      text-wrap: balance;
+    }
+  }
+  
+  
+  
+  
+  .gradient {
+    background: linear-gradient(
+        to right,
+        #03C652, #B8B5FF 35%, #03C652 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+  }
+  
