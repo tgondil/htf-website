@@ -30,14 +30,14 @@ export default function Home() {
               <h1 className="font-monument px-4 text-white">HOME</h1>
             </button>
           </Link>
-          <Link href="/about">
+          <Link href="/#about">
             <button onMouseEnter={isHovered} onMouseLeave={unHovered}>
               <h1 className="font-monument px-4 text-white">ABOUT</h1>
             </button>
           </Link>
           <Link href="/involvement">
             <button onMouseEnter={isHovered} onMouseLeave={unHovered}>
-              <h1 id="home" className="font-monument px-4 text-white gradient">
+              <h1  className="font-monument px-4 text-white">
                 APPLY
               </h1>
             </button>
@@ -46,11 +46,13 @@ export default function Home() {
             <h1 className="font-monument px-4 text-white">PORTFOLIO</h1>
           </button>
           <button onMouseEnter={isHovered} onMouseLeave={unHovered}>
-            <h1 className="font-monument px-4 text-white">MEET US</h1>
+            <h1 id="home" className="font-monument px-4 text-white gradient">MEET US</h1>
           </button>
+          <Link href="/events">
           <button onMouseEnter={isHovered} onMouseLeave={unHovered}>
             <h1 className="font-monument px-4 text-white">EVENTS</h1>
           </button>
+          </Link>
           <button onMouseEnter={isHovered} onMouseLeave={unHovered}>
             <h1 className="font-monument px-4 text-white">FAQ</h1>
           </button>

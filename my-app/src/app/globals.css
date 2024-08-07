@@ -65,3 +65,18 @@
     backdrop-filter: blur(20px);
 }
 
+.eventbox {
+    border-radius: 50px;
+    border: 1px solid #DAF7E6;
+    background: linear-gradient(142deg, rgba(190, 252, 215, 0.20) 9.69%, rgba(82, 252, 151, 0.10) 78.11%);
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.20);
+    backdrop-filter: blur(20px);
+}
+
+.timebox {
+    border-radius: 50px;
+    border: 1px solid #DAF7E6;
+    background: linear-gradient(142deg, rgba(190, 252, 215, 0.20) 9.69%, rgba(82, 252, 151, 0.10) 78.11%);
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.20);
+    backdrop-filter: blur(20px);
+}

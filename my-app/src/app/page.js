@@ -47,9 +47,11 @@ export default function Home() {
           <h1 className="font-monument px-4 text-white">MEET US</h1>
           </button>
           </Link>
+          <Link href="/events">
           <button onMouseEnter={isHovered} onMouseLeave={unHovered}>
           <h1 className="font-monument px-4 text-white">EVENTS</h1>
           </button>
+          </Link>
           <button onMouseEnter={isHovered} onMouseLeave={unHovered}>
           <h1 className="font-monument px-4 text-white">FAQ</h1>
           </button>

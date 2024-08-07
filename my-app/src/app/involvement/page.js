@@ -30,7 +30,7 @@ export default function Home() {
               <h1 className="font-monument px-4 text-white">HOME</h1>
             </button>
           </Link>
-          <Link href="/about">
+          <Link href="/#about">
             <button onMouseEnter={isHovered} onMouseLeave={unHovered}>
               <h1 className="font-monument px-4 text-white">ABOUT</h1>
             </button>
