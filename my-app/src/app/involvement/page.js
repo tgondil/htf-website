@@ -24,7 +24,7 @@ export default function Home() {
       <div className="h-screen w-screen bg-black">
         <div id="navbar" className="h-1/6 flex items-center">
           <img src="/Logo.png" className="h-12 w-42 px-12"></img>
-          <div className="basis-1/4"></div>
+          <div className="basis-1/3 ml-12"></div>
           <Link href="/">
             <button onMouseEnter={isHovered} onMouseLeave={unHovered}>
               <h1 className="font-monument px-4 text-white">HOME</h1>
@@ -42,9 +42,6 @@ export default function Home() {
               </h1>
             </button>
           </Link>
-          <button onMouseEnter={isHovered} onMouseLeave={unHovered}>
-            <h1 className="font-monument px-4 text-white">PORTFOLIO</h1>
-          </button>
           <Link href="/meet">
           <button onMouseEnter={isHovered} onMouseLeave={unHovered}>
             <h1 className="font-monument px-4 text-white">MEET US</h1>
@@ -53,9 +50,11 @@ export default function Home() {
           <button onMouseEnter={isHovered} onMouseLeave={unHovered}>
             <h1 className="font-monument px-4 text-white">EVENTS</h1>
           </button>
+          <Link href="/faq">
           <button onMouseEnter={isHovered} onMouseLeave={unHovered}>
             <h1 className="font-monument px-4 text-white">FAQ</h1>
           </button>
+          </Link>
         </div>
         <div className="h-full w-full bg-black flex z-10 relative">
           <div className="h-full w-full font-monument text-white text-6xl flex-col items-center px-8 pb-20">
@@ -97,10 +96,10 @@ export default function Home() {
                   <h1 className="text-xl font-horizon text-white pr-2 pb-2">
                     Team Leaders are the main line of communication between the
                     team and the non-profit. Team Leads are responsible for
-                    ensuring the team's success, and spearheading the
+                    ensuring the team&aposs success, and spearheading the
                     development of the project. Team Leads will coordinate
                     weekly meetings with their team as well as report to the HTF
-                    Executive Board on the team's progress.
+                    Executive Board on the team&aposs progress.
                   </h1>
                 </div>
                 <div className="itemhead mx-4 h-full basis-1/3 flex items-center justify-center px-4 text-center">
@@ -120,7 +119,7 @@ export default function Home() {
                     similar software), Designers will use their creative skills
                     to come up with high-res mockups of the application to
                     present to the team and the non-profits, and work with the
-                    Developers to bring the non-profits' ideas to fruition.
+                    Developers to bring the non-profits&apos ideas to fruition.
                   </h1>
                 </div>
               </div>

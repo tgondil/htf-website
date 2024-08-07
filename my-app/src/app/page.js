@@ -27,7 +27,7 @@ export default function Home() {
       <div className="h-screen bg-black">
         <div id="navbar" className="h-1/6 flex items-center">
           <img src="/Logo.png" className="h-12 w-42 px-12"></img>
-          <div className="basis-1/4"></div>
+          <div className="basis-1/3 ml-12"></div>
           <button id="home" className="gradient">
           <h1  className="font-monument px-4 text-white">HOME</h1>
           </button>
@@ -39,9 +39,6 @@ export default function Home() {
           <h1 className="font-monument px-4 text-white">APPLY</h1>
           </button>
           </Link>
-          <button onMouseEnter={isHovered} onMouseLeave={unHovered}>
-          <h1 className="font-monument px-4 text-white">PORTFOLIO</h1>
-          </button>
           <Link href="/meet">
           <button onMouseEnter={isHovered} onMouseLeave={unHovered}>
           <h1 className="font-monument px-4 text-white">MEET US</h1>
@@ -52,9 +49,11 @@ export default function Home() {
           <h1 className="font-monument px-4 text-white">EVENTS</h1>
           </button>
           </Link>
+          <Link href="/faq">
           <button onMouseEnter={isHovered} onMouseLeave={unHovered}>
           <h1 className="font-monument px-4 text-white">FAQ</h1>
           </button>
+          </Link>
         </div>
         <div className="h-5/6 w-full bg-white bg-black flex">
           <div className="basis-7/12 flex-col bg-black">

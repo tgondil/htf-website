@@ -47,66 +47,30 @@ export default function Home() {
             <h1 className="font-monument px-4 text-white">MEET US</h1>
           </button>
           </Link>
+          <Link href="events">
           <button onMouseEnter={isHovered} onMouseLeave={unHovered}>
-            <h1 id="home" className="font-monument px-4 gradient text-white">EVENTS</h1>
-          </button>
-          <Link href="/faq">
-          <button onMouseEnter={isHovered} onMouseLeave={unHovered}>
-            <h1 className="font-monument px-4 text-white">FAQ</h1>
+            <h1 className="font-monument px-4 text-white">EVENTS</h1>
           </button>
           </Link>
+          <button onMouseEnter={isHovered} onMouseLeave={unHovered}>
+            <h1  id="home" className="font-monument px-4 text-white gradient">FAQ</h1>
+          </button>
         </div>
         <div className="h-4/5 w-full bg-black flex z-10 relative">
           <div className="h-full w-full font-monument text-white text-6xl flex-col items-center px-8 pb-20">
             <div className="flex items-center justify-center">
               <img src="/leftarrow.png"></img>
-              <h1 className="pt-4 mx-6">UPCOMING EVENTS</h1>
+              <h1 className="pt-4 mx-6">FAQ</h1>
               <img src="/rightarrow.png"></img>
             </div>
-            <div className="w-full h-4/5 flex gap-14 px-20 py-20">
+            <div className="w-full h-full flex gap-14 px-20 py-20">
 
 
-            <div className="w-2/3 h-full eventbox flex-col pt-12  px-12">
-                <h1 className="font-monument text-htfgreen text-4xl pt-4 pb-8">
-                    B-Involved Fair
-                </h1>
-                <h1 className="font-horizon text-2xl">
-                We will be tabling at the B-involved fair so come visit us! If you want to ask us any questions or even just say hi, we’ll be excited to greet you! We will have some cool goodies for you to take back! :)
-                </h1>
-            </div>
-            <div className="w-1/3 h-full timebox flex-col text-3xl items-center justify-center">
-                <div className="flex items-center justify-center pt-12 pb-4">
-                <h1 className="text-5xl text-htfgreen">
-                    17
-                </h1>
-                </div>
+            <div className="w-full h-full faqbox flex-col pt-12  px-12">
                 
-                <div className="flex items-center justify-center">
-                <h1 className="text-4xl text-htfgreen">
-                    Aug
-                </h1>
-                </div>
-                <div className="flex items-center justify-center pt-8">
-                <h1 className="text-2xl">
-                    12-5pm
-                </h1>
-                </div>
-                <div className="flex items-center justify-center pt-4">
-                <h1 className="text-2xl text-center">
-                    Black & Gold Fields
-                </h1>
-                </div>
             </div>
-            
-          </div>
-          <div className="flex items-center justify-center pt-2 animate-intro-bounce">
-                <h1 className="text-2xl text-center text-htfgreen pr-4">
-                    Check out our social media to see our past events!
-                </h1>
-                <img className="" src="/arrow.png"></img>
-                </div>
             </div>
-          
+            </div>
         </div>
         
 
