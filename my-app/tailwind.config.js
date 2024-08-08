@@ -32,6 +32,11 @@ module.exports = {
         minipop: "mini_pop 0.5s 1"
       },
       keyframes: {
+        pop: {
+          "0%": { transform: "translateY(0%)" },
+          "50%": { transform: "translateY(-10%)" },
+          "100%": { transform: "translateY(0%)" },
+        },
         text: {
           "0%, 100%": {
             "background-size": "300% 300%",
