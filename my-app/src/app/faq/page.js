@@ -1,7 +1,9 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-
+import { FaInstagram } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithubSquare } from "react-icons/fa";
 import Image from "next/image";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
@@ -74,7 +76,7 @@ export default function Home() {
         </div>
         
 
-        <div className="w-full bg-black flex gap-10 pt-16 font-monument text-base text-white">
+        <div className="w-full bg-black flex gap-10 pt-16 font-monument text-base text-white ">
           <div className="flex-col px-8 pt-16">
             <h1 className="pb-4 text-htfgreen">GENERAL</h1>
             <h1>HOME</h1>
@@ -90,9 +92,27 @@ export default function Home() {
             <h1>STUDENTS</h1>
             <h1>NON-PROFITS</h1>
           </div>
-          <div className="flex-col px-8 pt-16">
+          <div className="flex-col px-8 pt-16 z-10">
             <h1 className="pb-4 text-htfgreen">CONTACT US</h1>
             <h1>htfpurdue@gmail.com</h1>
+            <div className="flex text-4xl pt-4 gap-4">
+
+                  <Link
+                    target="_blank"
+                    href="https://www.linkedin.com/company/hack-the-future-at-purdue/"
+                  >
+                    <FaInstagram className="hover:animate-pop cursor-pointer"></FaInstagram>
+                  </Link>
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/hackthefuturepurdue/"
+                  >
+                    <FaLinkedin className="hover:animate-pop cursor-pointer"></FaLinkedin>
+                  </a>
+                  <a target="blank" href="https://github.com/Hack-the-Future">
+                    <FaGithubSquare className="hover:animate-pop cursor-pointer" />
+                  </a>
+                  </div>
           </div>
           <div className="flex-col  pt-16 w-1/2"></div>
           <div className="flex-col justify-right px-8 pt-16">
@@ -104,7 +124,7 @@ export default function Home() {
               Purdue University, West Lafayette, IN, 47906
             </h1>
           </div>
-          <img className="absolute -mt-28" src="/globe.png"></img>
+          <img className="absolute -mt-28 z-0" src="/globe.png"></img>
         </div>
       </div>
       

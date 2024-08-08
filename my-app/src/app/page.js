@@ -88,7 +88,6 @@ export default function Home() {
                 >
                   <SplideSlide>
                     <div className="flex justify-center items-center">
-                      <img src="/lthc.png" className="basis-1/5"></img>
                       <img src="/lcwe.png" className="basis-1/5"></img>
                       <img src="/hanna.png" className="basis-2/5"></img>
                       <img src="/ywca.png" className="basis-1/5"></img>
@@ -255,17 +254,17 @@ export default function Home() {
 
                   <Link
                     target="_blank"
-                    href="https://www.linkedin.com/in/tgondil/"
+                    href="https://www.linkedin.com/company/hack-the-future-at-purdue/"
                   >
                     <FaInstagram className="hover:animate-pop cursor-pointer"></FaInstagram>
                   </Link>
                   <a
                     target="_blank"
-                    href="https://www.linkedin.com/in/tgondil/"
+                    href="https://www.instagram.com/hackthefuturepurdue/"
                   >
                     <FaLinkedin className="hover:animate-pop cursor-pointer"></FaLinkedin>
                   </a>
-                  <a target="blank" href="https://github.com/tgondil">
+                  <a target="blank" href="https://github.com/Hack-the-Future">
                     <FaGithubSquare className="hover:animate-pop cursor-pointer" />
                   </a>
                   </div>

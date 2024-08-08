@@ -2,7 +2,9 @@
 import React from "react";
 import Link from "next/link";
 import { useState } from "react";
-
+import { FaInstagram } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithubSquare } from "react-icons/fa";
 import Image from "next/image";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
@@ -71,35 +73,130 @@ export default function Home() {
               <img src="/rightarrow.png"></img>
             </div>
           </div>
-          <div className="w-full flex h-1/3 px-72 gap-48 mb-8">
-            
-            <img className="scale-125" src="/mahika.png"></img>
+          <div className="w-full flex h-1/3 px-72 gap-48 mb-12">
+            {vp ? (
+              <img
+                onMouseEnter={() => {
+                  onVp(false);
+                  document.body.style.cursor = "pointer";
+                }}
+                className="scale-125"
+                src="/mahika.png"
+              ></img>
+            ) : (
+              <img
+                onMouseLeave={() => {
+                  onVp(true);
+                  document.body.style.cursor = "default";
+                }}
+                onClick={() => window.open("https://www.linkedin.com/in/mahika-parakh/")}
+                className="scale-125 -mr-6"
+                src="/mahika-2.png"
+              ></img>
+            )}
             {me ? (
               <img
                 onMouseEnter={() => {
                   onMe(false);
-                  document.body.style.cursor = 'pointer';
+                  document.body.style.cursor = "pointer";
                 }}
-                className="scale-125"
+                className="scale-125 pl-2"
                 src="/tanay.png"
               ></img>
             ) : (
               <img
                 onMouseLeave={() => {
                   onMe(true);
-                  document.body.style.cursor = 'default';
+                  document.body.style.cursor = "default";
                 }}
                 onClick={() => window.open("https://tanaygondil.com")}
-                className="scale-125"
+                className="scale-125 pl-2"
                 src="/tanay-2.png"
               ></img>
             )}
-            <img className="scale-125" src="/lalitha.png"></img>
+
+            {secretary ? (
+              <img
+                onMouseEnter={() => {
+                  onSecretary(false);
+                  document.body.style.cursor = "pointer";
+                }}
+                className="scale-125"
+                src="/lalitha.png"
+              ></img>
+            ) : (
+              <img
+                onMouseLeave={() => {
+                  onSecretary(true);
+                  document.body.style.cursor = "default";
+                }}
+                onClick={() => window.open("https://www.linkedin.com/in/lalithachandolu/")}
+                className="scale-125"
+                src="/lalitha-2.png"
+              ></img>
+            )}
           </div>
           <div className="w-full flex h-1/3 px-72 gap-44">
-            <img className="scale-125" src="/sanjana.png"></img>
-            <img className="scale-125" src="/vipula.png"></img>
-            <img className="scale-125" src="/ryan.png"></img>
+            {treasurer ? (
+              <img
+                onMouseEnter={() => {
+                  onTreasurer(false);
+                  document.body.style.cursor = "pointer";
+                }}
+                className="scale-125"
+                src="/sanjana.png"
+              ></img>
+            ) : (
+              <img
+                onMouseLeave={() => {
+                  onTreasurer(true);
+                  document.body.style.cursor = "default";
+                }}
+                onClick={() => window.open("https://www.linkedin.com/in/sanjana-mohan-a81549269/")}
+                className="scale-125"
+                src="/sanjana-2.png"
+              ></img>
+            )}
+            {designer ? (
+              <img
+                onMouseEnter={() => {
+                  onDesigner(false);
+                  document.body.style.cursor = "pointer";
+                }}
+                className="scale-125"
+                src="/vipula.png"
+              ></img>
+            ) : (
+              <img
+                onMouseLeave={() => {
+                  onDesigner(true);
+                  document.body.style.cursor = "default";
+                }}
+                onClick={() => window.open("https://www.linkedin.com/in/vipula-shirse-252ba12a1/")}
+                className="scale-125"
+                src="/vipula-2.png"
+              ></img>
+            )}
+            {tech ? (
+              <img
+                onMouseEnter={() => {
+                  onTech(false);
+                  document.body.style.cursor = "pointer";
+                }}
+                className="scale-125"
+                src="/ryan.png"
+              ></img>
+            ) : (
+              <img
+                onMouseLeave={() => {
+                  onTech(true);
+                  document.body.style.cursor = "default";
+                }}
+                onClick={() => window.open("https://www.linkedin.com/in/ryanerickson680/")}
+                className="scale-125"
+                src="/ryan-2.png"
+              ></img>
+            )}
           </div>
           <div className="w-full flex gap-10 font-monument text-base bg-black text-white pt-16">
             <div className="flex-col px-8 pt-16">
@@ -117,9 +214,27 @@ export default function Home() {
               <h1>STUDENTS</h1>
               <h1>NON-PROFITS</h1>
             </div>
-            <div className="flex-col px-8 pt-16">
+            <div className="flex-col px-8 pt-16 z-10">
               <h1 className="pb-4 text-htfgreen">CONTACT US</h1>
               <h1>htfpurdue@gmail.com</h1>
+              <div className="flex text-4xl pt-4 gap-4">
+
+                  <Link
+                    target="_blank"
+                    href="https://www.linkedin.com/company/hack-the-future-at-purdue/"
+                  >
+                    <FaInstagram className="hover:animate-pop cursor-pointer"></FaInstagram>
+                  </Link>
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/hackthefuturepurdue/"
+                  >
+                    <FaLinkedin className="hover:animate-pop cursor-pointer"></FaLinkedin>
+                  </a>
+                  <a target="blank" href="https://github.com/Hack-the-Future">
+                    <FaGithubSquare className="hover:animate-pop cursor-pointer" />
+                  </a>
+                  </div>
             </div>
             <div className="flex-col  pt-16 w-1/2"></div>
             <div className="flex-col justify-right px-8 pt-16">
