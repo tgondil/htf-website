@@ -71,47 +71,69 @@ export default function Home() {
                   Who can join Hack the Future?
                 </h1>
                 <h1 className="my-4">
-                    Both undergraduate and graduate students across any major can join Hack the Future.
+                  Both undergraduate and graduate students across any major can
+                  join Hack the Future.
                 </h1>
-                
+
                 <h1 className="font-monument text-2xl pt-8">
                   How do I get started?
                 </h1>
                 <h1 className="my-4">
-                    Click <span className="gradient">here</span> to head to the apply tab. There, you may look over the various roles that you can apply for. If you are interested, you may choose to apply to multiple roles. If you make it past this initial application phase, you will be offered an interview via email. Based on the result of this interview, you may be given an offer to join Hack the Future.
+                  Click{" "}
+                  <span
+                    onClick={() => {
+                      window.open("/involvement");
+                    }}
+                    className="gradient cursor-pointer"
+                  >
+                    here
+                  </span>{" "}
+                  to head to the apply tab. There, you may look over the various
+                  roles that you can apply for. If you are interested, you may
+                  choose to apply to multiple roles. If you make it past this
+                  initial application phase, you will be offered an interview
+                  via email. Based on the result of this interview, you may be
+                  given an offer to join Hack the Future.
                 </h1>
                 <h1 className="font-monument text-2xl pt-8">
                   Do I need prior coding experience to participate?
                 </h1>
                 <h1 className="my-4">
-                  You do not require prior coding experience to participate. However, you must showcase a willingness to constantly learn and improve in both technical and non-technical aspects in order to be given an offer.
+                  You do not require prior coding experience to participate.
+                  However, you must showcase a willingness to constantly learn
+                  and improve in both technical and non-technical aspects in
+                  order to be given an offer.
                 </h1>
                 <h1 className="font-monument text-2xl pt-8">
                   Are there any fees to join or participate?
                 </h1>
                 <h1 className="my-4">
-                  Students are required to pay a yearly membership fee of 15$. These dues must be paid through TOOCOOL, in accordance with Purdue&#39;s organizational policies.
+                  Students are required to pay a yearly membership fee of 15$.
+                  These dues must be paid through TOOCOOL, in accordance with
+                  Purdue&#39;s organizational policies.
                 </h1>
                 <h1 className="font-monument text-2xl pt-8">
-                What kinds of events does the club host?
+                  What kinds of events does the club host?
                 </h1>
                 <h1 className="my-4">
-                  Hack the Future organizes several events each semester outside of the mandatory team meetings. These events include technical workshops, project showcases, talks with professors, networking events, and fun socials!
+                  Hack the Future organizes several events each semester outside
+                  of the mandatory team meetings. These events include technical
+                  workshops, project showcases, talks with professors,
+                  networking events, and fun socials!
                 </h1>
                 <h1 className="font-monument text-2xl pt-8">
-                    What are the expected hours/effort?
+                  What are the expected hours/effort?
                 </h1>
                 <h1 className="my-4">
-                  Students are required to dedicate at least two hours per week to Hack the Future.
+                  Students are required to dedicate at least two hours per week
+                  to Hack the Future.
                 </h1>
                 <h1 className="font-monument text-2xl pt-8">
-                    How can I stay up to date with club activities?
+                  How can I stay up to date with club activities?
                 </h1>
-                <h1 className="my-4">
-                  Follow us on Instagram!
-                </h1>
+                <h1 className="my-4">Follow us on Instagram!</h1>
                 <h1 className="font-monument text-2xl pt-8">
-                    Other questions?
+                  Other questions?
                 </h1>
                 <h1 className="my-4 pb-8">
                   Feel free to reach out to us via Instagram or Email.
@@ -120,9 +142,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="h-2/3 bg-black">
-
-        </div>
+        <div className="h-2/3 bg-black"></div>
         <div className="w-full bg-black flex gap-10 pt-16 font-monument text-base text-white">
           <div className="flex-col px-8 pt-16 z-10">
             <h1 className="pb-4 text-htfgreen">GENERAL</h1>
