@@ -113,20 +113,32 @@ export default function Home() {
         
 
         <div className="w-full bg-black flex gap-10 pt-16 font-monument text-base text-white">
-          <div className="flex-col px-8 pt-16">
+          <div className="flex-col px-8 pt-16 z-10">
             <h1 className="pb-4 text-htfgreen">GENERAL</h1>
-            <h1>HOME</h1>
-            <h1>ABOUT</h1>
-            <h1>PORTFOLIO</h1>
-            <h1>MEET US</h1>
-            <h1>EVENTS</h1>
-            <h1>FAQ</h1>
+            <Link href="/">
+                  <h1 className="hover:animate-pop">HOME</h1>
+                  </Link>
+                  <Link href="/#about">
+                  <h1 className="hover:animate-pop">ABOUT</h1>
+                  </Link>
+                  <Link href="/involvement">
+                  <h1 className="hover:animate-pop">APPLY</h1>
+                  </Link>
+                  <Link href="/meet">
+                  <h1 className="hover:animate-pop">MEET US</h1>
+                  </Link>
+                  <Link href="events">
+                  <h1 className="hover:animate-pop">EVENTS</h1>
+                  </Link>
+                  <Link href="faq">
+                  <h1 className="hover:animate-pop">FAQ</h1>
+                  </Link>
           </div>
 
-          <div className="flex-col px-8 w-1/3 pt-16">
+          <div className="flex-col px-8 w-1/3 pt-16 z-10">
             <h1 className="pb-4 text-htfgreen">GET INVOLVED</h1>
-            <h1>STUDENTS</h1>
-            <h1>NON-PROFITS</h1>
+            <h1 className="hover:animate-pop">STUDENTS</h1>
+                  <h1 className="hover:animate-pop">NON-PROFITS</h1>
           </div>
           <div className="flex-col px-8 pt-16 z-10">
             <h1 className="pb-4 text-htfgreen">CONTACT US</h1>

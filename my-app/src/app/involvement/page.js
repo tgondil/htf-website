@@ -99,10 +99,10 @@ export default function Home() {
                   <h1 className="text-xl font-horizon text-white pr-2 pb-2">
                     Team Leaders are the main line of communication between the
                     team and the non-profit. Team Leads are responsible for
-                    ensuring the team&aposs success, and spearheading the
+                    ensuring the team&#39;s success, and spearheading the
                     development of the project. Team Leads will coordinate
                     weekly meetings with their team as well as report to the HTF
-                    Executive Board on the team&aposs progress.
+                    Executive Board on the team&#39;s progress.
                   </h1>
                 </div>
                 <div className="itemhead mx-4 h-full basis-1/3 flex items-center justify-center px-4 text-center">
@@ -122,7 +122,7 @@ export default function Home() {
                     similar software), Designers will use their creative skills
                     to come up with high-res mockups of the application to
                     present to the team and the non-profits, and work with the
-                    Developers to bring the non-profits&apos ideas to fruition.
+                    Developers to bring the non-profits&#39; ideas to fruition.
                   </h1>
                 </div>
               </div>
@@ -140,20 +140,32 @@ export default function Home() {
       </div>
 
         <div className="w-full bg-black flex gap-10 pt-16 font-monument text-base text-white">
-          <div className="flex-col px-8 pt-16">
+          <div className="flex-col px-8 pt-16 z-10">
             <h1 className="pb-4 text-htfgreen">GENERAL</h1>
-            <h1>HOME</h1>
-            <h1>ABOUT</h1>
-            <h1>PORTFOLIO</h1>
-            <h1>MEET US</h1>
-            <h1>EVENTS</h1>
-            <h1>FAQ</h1>
+            <Link href="/">
+                  <h1 className="hover:animate-pop">HOME</h1>
+                  </Link>
+                  <Link href="/#about">
+                  <h1 className="hover:animate-pop">ABOUT</h1>
+                  </Link>
+                  <Link href="/involvement">
+                  <h1 className="hover:animate-pop">APPLY</h1>
+                  </Link>
+                  <Link href="/meet">
+                  <h1 className="hover:animate-pop">MEET US</h1>
+                  </Link>
+                  <Link href="events">
+                  <h1 className="hover:animate-pop">EVENTS</h1>
+                  </Link>
+                  <Link href="faq">
+                  <h1 className="hover:animate-pop">FAQ</h1>
+                  </Link>
           </div>
 
-          <div className="flex-col px-8 w-1/3 pt-16">
+          <div className="flex-col px-8 w-1/3 pt-16 z-10">
             <h1 className="pb-4 text-htfgreen">GET INVOLVED</h1>
-            <h1>STUDENTS</h1>
-            <h1>NON-PROFITS</h1>
+            <h1 className="hover:animate-pop">STUDENTS</h1>
+                  <h1 className="hover:animate-pop">NON-PROFITS</h1>
           </div>
           <div className="flex-col px-8 pt-16 z-10">
             <h1 className="pb-4 text-htfgreen">CONTACT US</h1>
